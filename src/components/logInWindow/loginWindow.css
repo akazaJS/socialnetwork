@@ -1,0 +1,121 @@
+.login_window{
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.login_window_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+
+.login_window_buttons{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_window_buttons_button{
+    background-color:  #34449f;
+    text-decoration: none;
+    border-radius: 7px;
+    min-height:30px;
+    width: 50%;
+    margin: auto;
+    color: #e5e6f1;
+    font-family: Arial;
+    transition: 0.6s;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.login_window_form_login{
+    margin: 5px;
+}
+
+.login_window_form_login{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_window_form_password{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_window_greetings{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    font-family: Arial;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login_window_form_login_button{
+    font-family: Arial;
+    color: #ffffff;
+    background-color: #34449f;
+    border-radius: 5px;
+    border:none;
+    width: 80px;
+    height: 30px;
+}
+
+.login_window_form_password_button{
+    font-family: Arial;
+    color: #ffffff;
+    background-color: #34449f;
+    border-radius: 5px;
+    border:none;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+}
+
+.login_window_form_login{
+    outline: none;
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+    transition: 0.4s;
+}
+
+.login_window_form_login:focus{
+    outline: none;
+    border: none;
+    border-bottom:  black 1px solid;
+}
+
+.login_window_form_password{
+    outline: none;
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+    transition: 0.4s;
+}
+
+.login_window_form_password:focus{
+    outline: none;
+    border: none;
+    border-bottom:  black 1px solid;
+}

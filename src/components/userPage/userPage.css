@@ -1,0 +1,349 @@
+.UserPage{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.UserPage_Header{
+    font-family: Arial;
+    color: #e5e6f1;
+    background-color: #34449f;
+    width: 100%;
+    border-color: #e5e6f1;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+
+.UserPage_main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.UserPage_Messenger{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+    border:1px solid rgba(129, 125, 119, 0);
+    background-color: rgba(255, 255, 255, 0.94);
+    height: 90%;
+    width:500px ;
+}
+
+
+.UserPage_userPicture_and_userInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 4px;
+}
+
+
+.UserPage_userPicture_Picture {
+    object-fit:cover;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    border:2px #e5e6f1 solid;
+}
+
+.UserPage_userPicture_Picture_2 {
+    object-fit:cover;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    border:2px #e5e6f1 solid;
+    margin-bottom: 3px;
+    background: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family: Arial;
+}
+
+
+.UserPage_userInfo {
+    font-family: Arial;
+    width: 50px;
+    font-style: italic;
+}
+
+
+.UserPage_UserFriends_and_SearchButton{
+    height: 100%;
+    width: 25%;
+}
+.UserPage_UserFriends{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+    border:1px solid rgba(129, 125, 119, 0);
+    border-top-right-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.94);
+    height: 100%;
+    overflow: hidden;
+}
+
+.UserPage_UserGroups{
+    height: 100%;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+    border:1px solid rgba(129, 125, 119, 0);
+    border-top-left-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.94);
+    height: 100%;
+    overflow: hidden;
+}
+
+.UserPage_Header_Search_and_PI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.UserPage_Header_Logo_Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserPage_Header_Logo{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserPage_UserGroups_Header{
+    font-family: Arial;
+    font-size: large;
+    display: flex;
+    justify-content: end;
+    height:70px;
+    box-sizing: border-box;
+    background: #34449f;
+    border: slategray 1px solid;
+    color: #e5e6f1;
+    padding: 20px;
+}
+
+.UserPage_UserFriends_and_SearchButton_Header{
+    font-family: Arial;
+    font-size: large;
+    display: flex;
+    height:70px;
+    box-sizing: border-box;
+    background: #34449f;
+    border: slategray 1px solid;
+    color: #e5e6f1;
+    padding: 20px;
+}
+
+.UserPage_Header_Link{
+    text-decoration: none;
+    color: #e5e6f1;
+    font-family: Arial;
+    margin-right: 20px;
+    border: white 1px solid;
+    width: 130px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.UserPage_UserFriends_FriendList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.UserPage_UserFriends_FriendList_Friend{
+    width: 100%;
+    border-bottom:1px slategray solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: larger;
+    font-family: Arial;
+}
+
+.UserPage_Header_Search_Dropdown_Input:focus{
+    outline: none;
+    border:none;
+}
+
+
+.UserPage_Header_Search_Dropdown_Input{
+    width: 180px;
+    outline: none;
+    border:none;
+    border-radius: 7px;
+    height: 20px;
+}
+
+.UserPage_Header_Search {
+    position: relative;
+    vertical-align: middle;
+    height: 49px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.UserPage_Header_Search:hover
+.UserPage_Header_Search_Dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UserPage_Header_Search_Inscription{
+    border: white 1px solid;
+    width: 130px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.UserPage_Messenger_Footer_PFM_Button{
+    border:1px white solid;
+    background:#34449f;
+    color: white;
+    font-family: Arial;
+    width: 60px;
+}
+
+.UserPage_Header_Search_Dropdown{
+    top:50px;
+    position: absolute;
+    color: #e5e6f1;
+    display: none;
+    margin: 0;
+    height: 400px;
+    background: #e5e6f1;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 14px;
+    padding-top: 10px;
+}
+
+.UserPage_Header_Dropdown_Content{
+    background: #e5e6f1;
+    border-bottom: #c0bfbb 1px solid;
+    border-top: #c0bfbb 1px solid;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    color: black;
+}
+
+.UserPage_Header_Dropdown_Content:hover{
+    background: #c0bfbb;
+}
+
+.UserPage_Header_Dropdown_List{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.button{
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    background: #34449f;
+}
+
+.UserPage_Messenger{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UserPage_Messenger_Header{
+    width: 100%;
+    border-bottom: #87847e 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #87847e;
+    font-family: Arial;
+}
+
+.UserPage_Messenger_Footer{
+    width: 100%;
+    border-top: #87847e 1px solid;
+    height: content-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.UserPage_Messenger_Footer_PFM{
+    resize: none;
+    width: 98%;
+    min-height: 40px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.UserPage_Messenger_Header_Destination{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.UserPage_Messenger_Messages{
+    width: 98%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width:none
+}
+
+.UserPage_Messenger_Messages_One{
+    width: 92%;
+    background: rgba(52, 68, 159, 0.69);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color:white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Arial;
+    margin: 2px;
+    word-break: break-all;
+}
+

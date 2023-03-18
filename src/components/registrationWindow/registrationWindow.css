@@ -1,0 +1,152 @@
+.App{
+    background-color: #e5e6f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.borderRegistrationWindow{
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.borderRegistrationWindow_greetings{
+    margin: 10px;
+    width: -moz-max-content;
+    height: min-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    font-family: Arial;
+    color: rgba(0, 0, 0, 0.5);
+    margin:20px;
+}
+
+.borderRegistrationWindow_buttons{
+    height: 10%;
+    margin: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.borderRegistrationWindow_buttons_button{
+    height: 100%;
+    width: 45%;
+    border:  #34449f 1px solid;
+    background-color:  #34449f;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.borderRegistrationWindow_personData{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    height:130%;
+}
+
+.borderRegistrationWindow_greetings_DLA{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: #34449f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    color: #6cd8cb;
+    font-family: "Arial Black";
+    margin: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: #e5e6f1;
+    font-family: Arial;
+}
+
+.borderRegistrationWindow_crBut{
+    border:  #34449f 1px solid;
+    background-color:  #34449f;
+    text-decoration: none;
+    border-radius: 7px;
+    height:40px;
+    width: 50%;
+    margin: auto;
+    color: #e5e6f1;
+    font-family: Arial;
+    transition: 0.6s;
+}
+
+.borderRegistrationWindow_crBut:disabled{
+    border:  #87847e 1px solid;
+    background-color: #817d77;
+    text-decoration: none;
+    border-radius: 7px;
+    height:min-content;
+    width: -moz-min-content;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.79);
+    transition: 0.6s;
+}
+
+.borderRegistrationWindow_crBut:hover{
+    width: 52%;
+    height: 43px;
+    transition: 0.1s;
+    box-shadow: rgb(0, 0, 0) 0px 0px 7px;
+}
+.borderRegistrationWindow_crBut:disabled:hover{
+    border:  #87847e 1px solid;
+    background-color: #817d77;
+    text-decoration: none;
+    border-radius: 7px;
+    height:min-content;
+    width: -moz-min-content;
+    margin: auto;
+    box-shadow: rgb(0, 0, 0) 0px 0px 7px;
+}
+
+
+.error{
+    color: red;
+    font-size: small;
+}
+
+.DLA{
+    width: 30px;
+    height: 30px;
+    border: #34449f 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
