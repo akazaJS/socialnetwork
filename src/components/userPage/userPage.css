@@ -174,13 +174,19 @@
 
 .UserPage_UserFriends_FriendList_Friend{
     width: 100%;
-    border-bottom:1px slategray solid;
+    border-bottom:1px  #e1e1e1 solid;
     height: 50px;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     padding-left: 10px;
     font-size: larger;
     font-family: Arial;
+}
+
+.UserPage_UserFriends_FriendList_Friend:hover{
+    background: #e1e1e1;
 }
 
 .UserPage_Header_Search_Dropdown_Input:focus{
@@ -347,3 +353,21 @@
     word-break: break-all;
 }
 
+.UserPage_UserFriends_FriendList_Friend_NameAndLastMessage{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.UserPage_UserFriends_FriendList_Friend_Name{
+    font-size: smaller;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.UserPage_UserFriends_FriendList_Friend_LastMessage{
+    font-family: Arial;
+    font-size: small;
+    color: #62585f;
+}

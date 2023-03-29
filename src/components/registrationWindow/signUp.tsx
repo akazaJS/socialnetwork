@@ -80,6 +80,9 @@ const SignUp:FC= () => {
             }
     }
 
+
+
+
     return (
         <div className={'borderRegistrationWindow'}>
             <h3 className={'borderRegistrationWindow_greetings'}>
@@ -87,14 +90,14 @@ const SignUp:FC= () => {
             </h3>
             <div className={'borderRegistrationWindow_greetings_DLA'}><h1>DLA</h1></div>
             <div >
-                <form id="regForm" className={'borderRegistrationWindow_personData'} >
+                <form name="regForm" className={'borderRegistrationWindow_personData'} >
                     {(dirtyName && errorName) && <div className={'error'}>{errorName}</div>}
                     <input
-                        onChangeCapture={blurHandler}
-                        placeholder={'name'}
-                        name='name'
-                        onChange={(e)=>setName(e.target.value)}
-                        value={name}
+                            onChangeCapture={blurHandler}
+                            placeholder={'name'}
+                            name='name'
+                            onChange={(e)=>setName(e.target.value)}
+                            value={name}
                     />
                     {(dirtySurname && errorSurname) && <div className={'error'}>{errorSurname}</div>}
                     <input

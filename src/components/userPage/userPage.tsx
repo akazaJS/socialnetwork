@@ -30,6 +30,17 @@ const UserPage:FC =()=>{
             .sort((a,b)=>a.dateTime-b.dateTime)
     }
 
+    const lastMessage = ()=>{
+        if(attractorField().length>0){
+            return attractorField()[attractorField().length-1].nameFrom}
+        }
+
+    const lastMessageText = ()=>{
+        if(attractorField().length>0){
+            return attractorField()[attractorField().length-1].text}
+    }
+
+
     useEffect(()=>{
 
         if(pesronIndex.index !== null){
@@ -149,7 +160,14 @@ const UserPage:FC =()=>{
                                         .map(pers=>pers.mainPicture)
                                         .toString()}
                                     />
-                                  <h5>{fr.name}  {fr.surname}</h5>
+                                    <div  className={'UserPage_UserFriends_FriendList_Friend_NameAndLastMessage'}>
+                                        <div className={'UserPage_UserFriends_FriendList_Friend_Name'}>
+                                            {fr.name}  {fr.surname}
+                                        </div>
+                                        <div  className={'UserPage_UserFriends_FriendList_Friend_LastMessage'}>
+                                            {lastMessage()}:{lastMessageText()}
+                                        </div>
+                                    </div>
                                 </div>)}
                         </div>
                     </div>
