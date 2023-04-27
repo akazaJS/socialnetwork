@@ -55,6 +55,7 @@ const UserPage:FC =()=>{
 
     },[typedMessage,messenger,minutesValue,index])
 
+    console.log(peopleList)
 
     return (
         <div className={'UserPage'}>
@@ -155,17 +156,21 @@ const UserPage:FC =()=>{
                                     key={fr.id}
                                 >
                                     <img style={{width:'40px',height:'40px',borderRadius:'50%',objectFit:'cover'}}
-                                        src={peopleList
-                                        .filter(pers=>pers.id === fr.id)
-                                        .map(pers=>pers.mainPicture)
-                                        .toString()}
+                                         src={peopleList
+                                             .filter(pers=>pers.id === fr.id)
+                                             .map(pers=>pers.mainPicture)
+                                             .toString()}
                                     />
                                     <div  className={'UserPage_UserFriends_FriendList_Friend_NameAndLastMessage'}>
                                         <div className={'UserPage_UserFriends_FriendList_Friend_Name'}>
                                             {fr.name}  {fr.surname}
                                         </div>
                                         <div  className={'UserPage_UserFriends_FriendList_Friend_LastMessage'}>
-                                            {lastMessage()}:{lastMessageText()}
+                                            <div  className={'UserPage_UserFriends_FriendList_Friend_LastMessage_Name'}>
+                                                {lastMessage()}
+                                            </div>
+                                              :
+                                            {lastMessageText()}
                                         </div>
                                     </div>
                                 </div>)}

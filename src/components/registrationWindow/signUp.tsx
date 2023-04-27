@@ -80,9 +80,6 @@ const SignUp:FC= () => {
             }
     }
 
-
-
-
     return (
         <div className={'borderRegistrationWindow'}>
             <h3 className={'borderRegistrationWindow_greetings'}>

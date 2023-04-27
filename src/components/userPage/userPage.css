@@ -370,4 +370,11 @@
     font-family: Arial;
     font-size: small;
     color: #62585f;
+    display: flex;
+    flex-direction: row;
+}
+
+.UserPage_UserFriends_FriendList_Friend_LastMessage_Name{
+    color: black;
+    font-family: Arial;
 }
