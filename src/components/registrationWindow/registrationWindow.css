@@ -85,18 +85,25 @@
     justify-content: flex-start;
     align-items: center;
 }
-
+.buttonAndAdd{
+    margin-left: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .facialPageCreateAccount{
-    border:1px solid rgba(40, 88, 234, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 360px;
     height: 180px;
-    margin-left:20px;
+    margin-left:35px;
     margin-bottom: 80px;
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.66);
 }
 .facialPageCreateAccountButAndAdd{
     display: flex;
@@ -135,6 +142,17 @@
     height: 37px;
     border-radius: 6px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
 }
 
 .facialPagePromo_Promo{
@@ -144,6 +162,13 @@
     background: linear-gradient(45deg, rgba(40, 88, 234, 0.8) 33%, rgba(255, 163, 2, 0.73) 12%, rgba(192, 40, 234, 0.82));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.facialPageCreateAccountButtonLink{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: small;
 }
 
 
@@ -157,7 +182,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 130px;
+    margin-right: 210px;
 }
 .facialPageHeaderLogo{
     display: flex;
@@ -310,10 +335,15 @@
 
 
 .error{
-    color: red;
-    font-size: small;
+    color: rgba(255, 0, 0, 0.83);
+    font-size: smaller;
+    font-family: Arial;
 }
-
+.errorNO{
+   color:#2858ea;
+    font-size: smaller;
+    font-family: Arial;
+}
 .DLA{
     width: 30px;
     height: 30px;

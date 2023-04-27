@@ -40,12 +40,9 @@ const LoginWindow:FC= () => {
 
     return (
         <div className={'login_window'}>
-            <div className={'login_window_form'}>
+            <div className={'facialPageCreateAccount'}>
                 {loginButtonClickValue ?
                     <div className={'login_window_form'}>
-                        <h3 className={'login_window_greetings'}>
-                            enter your username...
-                        </h3>
                         {loginError ? <div className={'error'}>Incorrect login</div>:<div></div>}
                         <input
                             value={login}
@@ -55,7 +52,7 @@ const LoginWindow:FC= () => {
                             }
                         }
                             placeholder={'login'}
-                            className={'login_window_form_login'}
+                            className={'facialPageCreateAccountLogPas'}
                         />
                         <button
                             onClick={()=>{
@@ -68,13 +65,10 @@ const LoginWindow:FC= () => {
                                    setLoginError(true)
                                }
                             }}
-                            className={'login_window_form_login_button'}>continue</button>
+                            className={'facialPageCreateAccountButton'}>continue</button>
                     </div>
                          :
                     <div className={'login_window_form'}>
-                        <h3 className={'login_window_greetings'}>
-                            ...and now the password
-                        </h3>
                         {passwordError? <div className={'error'}>Incorrect password</div>:<div></div>}
                         <input
                         value={password}
@@ -95,7 +89,7 @@ const LoginWindow:FC= () => {
                                 }
                             }
                             }
-                            className={'login_window_form_password_button'}>
+                            className={'facialPageCreateAccountButton'}>
                             continue
                         </button>
                     </div>}
